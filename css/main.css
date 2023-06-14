@@ -36,10 +36,16 @@ label {
 	margin-bottom: .3rem;
 }
 
+div.techItems {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
 div.techItem {
 	display: flex;
 	align-items: center;
-	justify-content:flex-start;
+	justify-content: flex-start;
 	user-select: none;
 }
 
@@ -70,11 +76,11 @@ input:invalid {
 }
 
 .note {
-	color: var(--note-color); 
+	color: var(--note-color);
 }
 
 .noteExplanation {
-	color: var(--note-color); 
+	color: var(--note-color);
 }
 
 button {
