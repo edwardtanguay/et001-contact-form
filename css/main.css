@@ -1,3 +1,7 @@
+:root {
+	--note-color: rgb(116, 94, 218);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -38,13 +42,27 @@ input {
 	width: 100%;
 }
 
+input:invalid {
+	color: darkred;
+	background-color: rgb(139, 0, 0, 0.1);
+}
+
 .row {
 	margin-bottom: 1rem;
 }
 
 .buttonRow {
 	margin-top: 2rem;
-	text-align: right;
+	display: flex;
+	justify-content: space-between;
+}
+
+.note {
+	color: var(--note-color); 
+}
+
+.noteExplanation {
+	color: var(--note-color); 
 }
 
 button {
@@ -57,6 +75,7 @@ button {
 		font-size: 1.3rem;
 		text-align: center;
 	}
+
 	legend {
 		font-size: 1.2em;
 	}
@@ -67,9 +86,11 @@ button {
 	h1 {
 		font-size: 1.5rem;
 	}
+
 	legend {
 		font-size: 1.4em;
 	}
+
 	fieldset {
 		max-width: 40rem;
 	}

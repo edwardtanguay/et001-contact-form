@@ -14,22 +14,24 @@
 
 <body>
 	<h1>HTML form which sends data via action attribute to local backend</h1>
-	<form action="https://formspree.io/f/moqpoqkk"
+	<form action="https://formspreennn.io/f/moqpoqkk"
 		  method="post">
 
 		<fieldset>
 			<legend>Your contact details:</legend>
 
 			<div class="row">
-				<label for="fullName">Name:</label>
+				<label for="fullName">Full name<span class="note">*</span></label>
 				<input type="text"
+					   required
 					   name="fullName"
 					   id="fullName">
 			</div>
 
 			<div class="row">
-				<label for="email">Email:</label>
+				<label for="email">Email<span class="note">*</span></label>
 				<input type="email"
+					   required
 					   name="email"
 					   id="email">
 			</div>
@@ -41,11 +43,19 @@
 					   id="age">
 			</div>
 
+			<div class="row">
+				<label for="age">What:</label>
+				<input type="number"
+					   name="age"
+					   id="age">
+			</div>
+
 			<script>
 				document.write(`<input type="hidden" name="originUrl" value="${window.location.href}">`);
 			</script>
 
 			<div class="buttonRow">
+				<div class="note">* required field</div>
 				<button>Sign up now</button>
 			</div>
 		</fieldset>
