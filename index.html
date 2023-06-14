@@ -97,9 +97,33 @@
 				</div>
 			</div>
 
-			<script>
-				document.write(`<input type="hidden" name="originUrl" value="${window.location.href}">`);
-			</script>
+			<div class="row">
+				<label for="l">What is your experience level as a developer?</label>
+				<div class="levels">
+					<div class="level">
+						  <input type="radio"
+							   id="junior"
+							   name="level"
+							   value="junior">
+						  <label for="junior">junior</label>
+					</div>
+					<div class="level">
+						  <input type="radio"
+							   id="intermediate"
+							   name="level"
+							   checked
+							   value="intermediate">
+						  <label for="intermediate">intermediate</label>
+					</div>
+					<div class="level">
+						  <input type="radio"
+							   id="senior"
+							   name="level"
+							   value="senior">
+						  <label for="senior">senior</label>
+					</div>
+				</div>
+			</div>
 
 			<div class="buttonRow">
 				<div class="note">* required field</div>

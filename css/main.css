@@ -1,5 +1,5 @@
 :root {
-	--note-color: rgb(116, 94, 218);
+	--note-color: brown; 
 }
 
 * {
@@ -57,6 +57,18 @@ input {
 }
 
 input[type="checkbox"] {
+	width: auto;
+	margin: 0 .5rem -.2rem .5rem;
+}
+
+div.level {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	user-select: none;
+}
+
+input[type="radio"] {
 	width: auto;
 	margin: 0 .5rem -.2rem .5rem;
 }
