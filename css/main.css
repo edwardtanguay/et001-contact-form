@@ -35,6 +35,18 @@ select {
 	padding: .3rem;
 }
 
+div.rangeControl {
+	margin-top: 1rem;
+	margin-left: .5rem;
+}
+
+div.interestLabels	{
+	display: flex;
+	justify-content: space-between;
+	font-size: .8rem;
+}
+
+
 label {
 	display: block;
 	padding-top: .5em;
