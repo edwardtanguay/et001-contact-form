@@ -37,9 +37,9 @@ label {
 }
 
 div.techItems {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
 }
 
 div.techItem {
@@ -47,6 +47,7 @@ div.techItem {
 	align-items: center;
 	justify-content: flex-start;
 	user-select: none;
+	width: 30%;
 }
 
 input {
