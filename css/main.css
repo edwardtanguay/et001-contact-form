@@ -30,6 +30,11 @@ legend {
 	color: #333;
 }
 
+select {
+	margin: .5rem 0 0 .5rem;
+	padding: .3rem;
+}
+
 label {
 	display: block;
 	padding-top: .5em;
