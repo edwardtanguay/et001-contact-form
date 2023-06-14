@@ -36,10 +36,22 @@ label {
 	margin-bottom: .3rem;
 }
 
+div.techItem {
+	display: flex;
+	align-items: center;
+	justify-content:flex-start;
+	user-select: none;
+}
+
 input {
 	padding: .5em;
 	border: 1px solid #999;
 	width: 100%;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	margin: 0 .5rem -.2rem .5rem;
 }
 
 input:invalid {
